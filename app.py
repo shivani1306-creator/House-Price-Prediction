@@ -46,7 +46,7 @@ st.markdown('<p class="subtext">Enter house details and get instant AI-based pre
 st.write("")
 
 # ---------------- LOAD MODEL ----------------
-model = pickle.load(open("model/model.pkl", "rb"))
+model = pickle.load(open("modelmodel.pkl", "rb"))
 
 # ---------------- LAYOUT ----------------
 col1, col2 = st.columns(2)
@@ -81,3 +81,4 @@ if st.button("🚀 Predict House Price"):
     st.markdown("---")
     st.success(f"💰 Estimated House Price: ₹ {prediction[0]:,.2f}")
     st.balloons()
+
